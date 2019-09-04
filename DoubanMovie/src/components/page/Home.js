@@ -21,17 +21,23 @@ export default class Home extends Component {
         <Banner />
         <View style={styles.apps}>
           <View style={styles.appsRow}>
-            <TouchableWithoutFeedback activeOpacity={0.5} onPress={Actions.book}>
+            <TouchableWithoutFeedback
+              activeOpacity={0.5}
+              onPress={Actions.book}>
               <View style={[styles.appsRowItem, {backgroundColor: 'blue'}]}>
                 <Text style={styles.appsRowItemText}>书籍</Text>
               </View>
             </TouchableWithoutFeedback>
-            <TouchableWithoutFeedback activeOpacity={0.5} onPress={Actions.music}>
+            <TouchableWithoutFeedback
+              activeOpacity={0.5}
+              onPress={Actions.music}>
               <View style={[styles.appsRowItem, {backgroundColor: 'yellow'}]}>
                 <Text style={styles.appsRowItemText}>音乐</Text>
               </View>
             </TouchableWithoutFeedback>
-            <TouchableWithoutFeedback activeOpacity={0.5} onPress={Actions.movie}>
+            <TouchableWithoutFeedback
+              activeOpacity={0.5}
+              onPress={Actions.movie}>
               <View style={[styles.appsRowItem, {backgroundColor: 'green'}]}>
                 <Text style={styles.appsRowItemText}>电影</Text>
               </View>
@@ -45,9 +51,13 @@ export default class Home extends Component {
             <View style={[styles.appsRowItem, {backgroundColor: 'skyblue'}]}>
               <Text style={styles.appsRowItemText}>广播</Text>
             </View>
-            <View style={[styles.appsRowItem, {backgroundColor: 'orange'}]}>
-              <Text style={styles.appsRowItemText}>相册</Text>
-            </View>
+            <TouchableWithoutFeedback
+              activeOpacity={0.5}
+              onPress={Actions.choosePic}>
+              <View style={[styles.appsRowItem, {backgroundColor: 'orange'}]}>
+                <Text style={styles.appsRowItemText}>相册</Text>
+              </View>
+            </TouchableWithoutFeedback>
           </View>
 
           <View style={styles.appsRow}>

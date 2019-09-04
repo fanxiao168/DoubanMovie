@@ -3,7 +3,7 @@ const apiKey = '0df993c66c0c636e29ecbb5344252a4a';
 
 export default {
   //书籍
-  book: {},
+  book: `${dbDomain}/book/search?apikey=${apiKey}`,
 
   //音乐
   music: {},

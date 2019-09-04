@@ -20,6 +20,7 @@ import MusicList from './src/components/page/music/MusicList';
 import MusicDetail from './src/components/page/music/MusicDetail';
 import MovieList from './src/components/page/movie/MovieList';
 import MovieDetail from './src/components/page/movie/MovieDetail';
+import ChoosePicture from './src/components/page/choosePicture/ChoosePicture';
 
 export default class App extends React.Component {
   render() {
@@ -71,6 +72,18 @@ export default class App extends React.Component {
               leftButtonIconStyle={{color: 'blue'}}
               key="movieDetail"
               component={MovieDetail}
+            />
+          </Stack>
+
+          {/*相册相机路由配置*/}
+          <Stack key="choosePic" title="相册相机">
+            {/*scene有一个initial属性，用户指定stack下de组件入口，入口组件可以通过Stack的key进入*/}
+            {/*将来组件的入口变化了，修改initial属性就可*/}
+            <Scene
+              initial
+              hideNavBar
+              key="ChoosePicture"
+              component={ChoosePicture}
             />
           </Stack>
         </Stack>
