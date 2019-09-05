@@ -2,8 +2,13 @@ const dbDomain = 'https://api.douban.com/v2';
 const apiKey = '0df993c66c0c636e29ecbb5344252a4a';
 
 export default {
-  //书籍
-  book: `${dbDomain}/book/search?apikey=${apiKey}`,
+  //图书
+  book: {
+    //图书搜索
+    bookSearch: `${dbDomain}/book/search?apikey=${apiKey}`,
+    //图书详情
+    bookDetail: `${dbDomain}/book/`,
+  },
 
   //音乐
   music: {},

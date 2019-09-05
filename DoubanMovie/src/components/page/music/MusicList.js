@@ -4,7 +4,6 @@ import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 
 import {Actions} from 'react-native-router-flux';
 
-import Navbar from '../../common/Navbar';
 
 export default class MusicList extends Component {
   render() {
@@ -13,7 +12,6 @@ export default class MusicList extends Component {
       <View style={{flex: 1, position: 'relative'}}>
         <Text>音乐列表</Text>
         <Text>音乐列表</Text>
-        <Navbar />
       </View>
     );
   }
